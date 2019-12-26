@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>古成风&amp;&amp;郭佳</title>
+    <title>ReactNative的调试技巧 | 古成风&amp;&amp;郭佳</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -12,15 +12,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="">
+    <meta name="description" content="ReactNative断点调试1.RCTWebSocketExecutor.m文件修改localhost为Mac的IP：
+1234567NSInteger port &amp;#x3D; [[[_bridge bundleURL] port] integerValue] ?: RCT_METRO_PORT;NSString *host &amp;#x3D; [[_bridge bundleURL] host] ?">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="古成风&amp;&amp;郭佳">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="ReactNative的调试技巧 | 古成风&amp;&amp;郭佳">
+    <meta name="twitter:description" content="ReactNative断点调试1.RCTWebSocketExecutor.m文件修改localhost为Mac的IP：
+1234567NSInteger port &amp;#x3D; [[[_bridge bundleURL] port] integerValue] ?: RCT_METRO_PORT;NSString *host &amp;#x3D; [[_bridge bundleURL] host] ?">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="古成风&amp;&amp;郭佳">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="ReactNative的调试技巧 | 古成风&amp;&amp;郭佳">
+    <meta property="og:description" content="ReactNative断点调试1.RCTWebSocketExecutor.m文件修改localhost为Mac的IP：
+1234567NSInteger port &amp;#x3D; [[[_bridge bundleURL] port] integerValue] ?: RCT_METRO_PORT;NSString *host &amp;#x3D; [[_bridge bundleURL] host] ?">
 
     
     <meta name="author" content="guchengfeng">
@@ -41,7 +44,7 @@
     <link rel="alternate" type="application/rss+xml" title="古成风&amp;&amp;郭佳" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://yoursite.com"/>
+    <link rel="canonical" href="http://yoursite.com/2019/12/26/ReactNative%E7%9A%84%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7/"/>
 
                  
 </head>
@@ -59,7 +62,7 @@
     </span>
 
     
-<header class="panel-cover " style="background-image: url(/images/background-cover.jpg)">
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
@@ -150,87 +153,69 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
-    
-  <ol class="post-list">
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2019/12/26/ReactNative的调试技巧/" title="link to post.title">ReactNative的调试技巧</a></h2>
-      <p class="excerpt">
-    
-      ReactNative断点调试1.RCTWebSocketExecutor.m文件修改localhost为Mac的IP：
-1234567NSInteger port &amp;#x3D; [[[_bridge bundleURL] port] integerValue] ?: RCT_METRO_PORT;NSString *host &amp;#x3D; [[_bridge bundleURL] host] ?
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2019-12-26T10:13:39.759Z" class="post-list__meta--date date">2019-12-26</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/12/26/ReactNative的调试技巧/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2019/12/25/hello-world/" title="link to post.title">Hello World</a></h2>
-      <p class="excerpt">
-    
-      Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2019-12-25T03:00:42.876Z" class="post-list__meta--date date">2019-12-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/12/25/hello-world/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2019/12/18/ReactNative的view缓存实现思路/" title="link to post.title">ReactNative的view缓存实现思路</a></h2>
-      <p class="excerpt">
-    
-      前景
-我们的项目使用原生框架，flutter作为首页，其它的业务页面使用reactNative开发的方式。现在的问题是从flutter首页跳转到ReactNative页面在低端机上会明显缓慢，在高端机上也会有白屏一闪而过。
+            <article class="post-container post-container--single">
 
-预加载解决这个问题可以采用预加载的方式，提前在启动的时候加载view代码123456789101112131415161718192021222324252627282930
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2019-12-18T03:44:41.304Z" class="post-list__meta--date date">2019-12-18</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/12/18/ReactNative的view缓存实现思路/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2019/12/12/设备安装App List的方案/" title="link to post.title">设备安装App List的方案</a></h2>
-      <p class="excerpt">
-    
-      是否安装了App的检测1234567891011let tagetURL &amp;#x3D; NSURL.init(fileURLWithPath: &amp;quot;mqq:&amp;#x2F;&amp;#x2F;&amp;quot;)if(UIApplication.shared.canOpenURL(tagetURL as URL))&amp;#123;    print(&amp;quot;有安装微信&amp;quot;)    UIApplica
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2019-12-12T10:12:05.613Z" class="post-list__meta--date date">2019-12-12</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/12/12/设备安装App List的方案/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-  </ol>
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2019-12-26T10:13:39.759Z" class="post-list__meta--date date">2019-12-26</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">ReactNative的调试技巧</h1>
+  </header>
+
+  <section class="post">
+    <h3 id="ReactNative断点调试"><a href="#ReactNative断点调试" class="headerlink" title="ReactNative断点调试"></a>ReactNative断点调试</h3><p>1.RCTWebSocketExecutor.m文件修改localhost为Mac的IP：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">NSInteger port &#x3D; [[[_bridge bundleURL] port] integerValue] ?: RCT_METRO_PORT;</span><br><span class="line"></span><br><span class="line">NSString *host &#x3D; [[_bridge bundleURL] host] ?: @&quot;***********&quot;;</span><br><span class="line"></span><br><span class="line">NSString *URLString &#x3D; [NSString stringWithFormat:@&quot;http:&#x2F;&#x2F;%@:%lld&#x2F;debugger-proxy?role&#x3D;client&quot;, host, (long long)port];</span><br><span class="line"></span><br><span class="line">_url &#x3D; [RCTConvert NSURL:URLString];</span><br></pre></td></tr></table></figure>
+
+<p>2.在手机上设置代理为Mac</p>
+<p>3.打开<a href="http://localhost:9999/debugger-ui/" target="_blank" rel="noopener">http://localhost:9999/debugger-ui/</a></p>
+<p>4.将项目文件拖拽到file system目录下面</p>
+<p><img src="https://ww1.yunjiexi.club/2019/12/26/PnDoc.jpg" alt="image"></p>
+<p>现在可以做断点调试了</p>
+<p>1.在vscode里面修改代码的话，浏览器里面的可以快速同步代码</p>
+<p>2.打印一行语句试一下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   title: &#39;Mobx&#39;,</span><br><span class="line">   action: () &#x3D;&gt; &#123;</span><br><span class="line">   this.props.navigation.navigate(&#39;Test.TestMobx&#39;)</span><br><span class="line">   console.log(&#39;this is console data...&#39;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
- <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    }); 
-    
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</div>
+<p>3.在浏览器里面和在vscode里面修改都可以同步代码</p>
+<p>4.断点</p>
+<p><img src="https://ww1.yunjiexi.club/2019/12/26/PnpqL.jpg" alt="image"></p>
+<p>5.打印变量</p>
+<p><img src="https://ww1.yunjiexi.club/2019/12/26/Pn8JF.jpg" alt="image"></p>
+<p>6.c603c20</p>
 
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2019/12/25/hello-world/" title="Hello World">Hello World</a></h2>
+                <p class="excerpt">
+                
+                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2019-12-25T03:00:42.876Z" class="post-list__meta--date date">2019-12-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/12/25/hello-world/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
 
             <footer class="footer">
     <span class="footer__copyright">
