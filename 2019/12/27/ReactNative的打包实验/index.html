@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="e">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>ReactNative的打包实验 | 古成风&amp;&amp;郭佳</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="打包实验（基于本地的bundle）打包的脚本12345678&amp;quot;scripts&amp;quot;: &amp;#123;    &amp;quot;android&amp;quot;: &amp;quot;react-native run-android&amp;quot;,    &amp;quot;ios&amp;quot;: &amp;quot;react-native run-ios&amp;quot;,    &amp;quot;start&amp;quot;: &amp;quo">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ReactNative的打包实验 | 古成风&amp;&amp;郭佳">
+    <meta name="twitter:description" content="打包实验（基于本地的bundle）打包的脚本12345678&amp;quot;scripts&amp;quot;: &amp;#123;    &amp;quot;android&amp;quot;: &amp;quot;react-native run-android&amp;quot;,    &amp;quot;ios&amp;quot;: &amp;quot;react-native run-ios&amp;quot;,    &amp;quot;start&amp;quot;: &amp;quo">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ReactNative的打包实验 | 古成风&amp;&amp;郭佳">
+    <meta property="og:description" content="打包实验（基于本地的bundle）打包的脚本12345678&amp;quot;scripts&amp;quot;: &amp;#123;    &amp;quot;android&amp;quot;: &amp;quot;react-native run-android&amp;quot;,    &amp;quot;ios&amp;quot;: &amp;quot;react-native run-ios&amp;quot;,    &amp;quot;start&amp;quot;: &amp;quo">
+
+    
+    <meta name="author" content="guchengfeng">
+    
+    
+<link rel="stylesheet" href="/css/vno.css">
+
+    
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="古成风&amp;&amp;郭佳" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2019/12/27/ReactNative%E7%9A%84%E6%89%93%E5%8C%85%E5%AE%9E%E9%AA%8C/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+    
+<script src="/js/main.js"></script>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 古成风&amp;&amp;郭佳 的主页"><img src="/images/avatar.jpg" width="80" alt="古成风&amp;&amp;郭佳 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 古成风&amp;&amp;郭佳">古成风&amp;&amp;郭佳</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/monniya" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/onlymonniya" title="Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2019-12-27T10:15:00.198Z" class="post-list__meta--date date">2019-12-27</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">ReactNative的打包实验</h1>
+  </header>
+
+  <section class="post">
+    <h3 id="打包实验（基于本地的bundle）"><a href="#打包实验（基于本地的bundle）" class="headerlink" title="打包实验（基于本地的bundle）"></a>打包实验（基于本地的bundle）</h3><h6 id="打包的脚本"><a href="#打包的脚本" class="headerlink" title="打包的脚本"></a>打包的脚本</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;android&quot;: &quot;react-native run-android&quot;,</span><br><span class="line">    &quot;ios&quot;: &quot;react-native run-ios&quot;,</span><br><span class="line">    &quot;start&quot;: &quot;react-native start&quot;,</span><br><span class="line">    &quot;test&quot;: &quot;jest&quot;,</span><br><span class="line">    &quot;lint&quot;: &quot;eslint .&quot;,</span><br><span class="line">    &quot;bundle-ios&quot;: &quot;node node_modules&#x2F;react-native&#x2F;local-cli&#x2F;cli.js bundle --entry-file index.js --platform ios --dev false --bundle-output bundle&#x2F;movie.jsbundle --assets-dest bundle&quot;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>==运行 npm run bundle-ios==</p>
+<p>离线包加载的实现</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge</span><br><span class="line">&#123;</span><br><span class="line">#if DEBUG</span><br><span class="line">  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@&quot;index&quot; fallbackResource:nil];</span><br><span class="line">#else</span><br><span class="line">   return [[NSBundle mainBundle] URLForResource:@&quot;bundle&#x2F;movie&quot; withExtension:@&quot;jsbundle&quot;];</span><br><span class="line">#endif</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>==testDemo.jsbundle==</p>
+<p>Demo：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">render() &#123;</span><br><span class="line"></span><br><span class="line">    &lt;view style&#x3D;&#123;styles.container&#125;&gt;</span><br><span class="line"></span><br><span class="line">      &lt;Text style&#x3D;&#123;styles.title&#125;&gt;</span><br><span class="line"></span><br><span class="line">        测试demo</span><br><span class="line"></span><br><span class="line">     &lt;&#x2F;Text&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;view&gt;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">export default class App extends Component &#123;</span><br><span class="line"></span><br><span class="line">  static navigationOptions &#x3D; &#123;</span><br><span class="line">    title: &#39;网络请求&#39;,</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state &#x3D; &#123;&#x2F;&#x2F;这里放你自己定义的state变量以及初始值</span><br><span class="line">      data: [],</span><br><span class="line">      loaded: false,</span><br><span class="line">    &#125;;</span><br><span class="line">    &#x2F;&#x2F;在ES6中，如果在自定义的函数里使用了this关键字，则需要对其进行“绑定”操作，否则this的指向会边为空</span><br><span class="line">    &#x2F;&#x2F;像下面这行代码一样，在constructor中使用bind是其中一种做法（还有一些其他做法，如使用箭头函数等）</span><br><span class="line">    this.fetchData &#x3D; this.fetchData.bind(this);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F;该方法是React组件的一个生命周期方法，它会在组件刚加载完成的时候调用一次，以后不会再被调用。</span><br><span class="line">  componentDidMount() &#123;</span><br><span class="line">    this.fetchData();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  fetchData() &#123;</span><br><span class="line">    fetch(REQUEST_URL)</span><br><span class="line">      .then((response) &#x3D;&gt; response.json())</span><br><span class="line">      .then((responseData) &#x3D;&gt; &#123;</span><br><span class="line">        this.setState(&#123;</span><br><span class="line">          loaded: true,</span><br><span class="line">          data: this.state.data.concat(responseData.movies),</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    if (!this.state.loaded) &#123;</span><br><span class="line">      return this.renderLoadingView();</span><br><span class="line">    &#125;</span><br><span class="line">    return (</span><br><span class="line">      &lt;FlatList renderItem&#x3D;&#123;this.renderMovie&#125; data&#x3D;&#123;this.state.data&#125; style&#x3D;&#123;styles.list&#125; &#x2F;&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  renderLoadingView() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;View style&#x3D;&#123;styles.container&#125;&gt;</span><br><span class="line">        &lt;Text&gt;正在加载电影数据...&lt;&#x2F;Text&gt;</span><br><span class="line">      &lt;&#x2F;View&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  renderMovie(&#123; item &#125;) &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;View style&#x3D;&#123;styles.container&#125;&gt;</span><br><span class="line">        &lt;Image style&#x3D;&#123;styles.thumbnail&#125; source&#x3D;&#123;&#123; uri: item.posters.thumbnail &#125;&#125; &#x2F;&gt;</span><br><span class="line">        &lt;View style&#x3D;&#123;styles.rightContainer&#125;&gt;</span><br><span class="line">          &lt;Text style&#x3D;&#123;styles.title&#125;&gt;&#123;item.title&#125;&lt;&#x2F;Text&gt;</span><br><span class="line">          &lt;Text style&#x3D;&#123;styles.year&#125;&gt;&#123;item.year&#125;&lt;&#x2F;Text&gt;</span><br><span class="line">        &lt;&#x2F;View&gt;</span><br><span class="line">      &lt;&#x2F;View&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>==movie.jsbundle==</p>
+<blockquote>
+<p>在上述代码中替换不同的文件会加载不同的页面,修改之后代码：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge</span><br><span class="line">&#123;</span><br><span class="line">  NSString *bundleName &#x3D; @&quot;bundle&#x2F;movie&quot;;</span><br><span class="line">    int i &#x3D; arc4random() % 2 ;</span><br><span class="line">    if(i &#x3D;&#x3D; 0)</span><br><span class="line">    &#123;</span><br><span class="line">      bundleName &#x3D; @&quot;bundle&#x2F;movie&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">      bundleName &#x3D; @&quot;bundle1&#x2F;test&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">#if DEBUG</span><br><span class="line">  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@&quot;index&quot; fallbackResource:nil];</span><br><span class="line">#else</span><br><span class="line">   return [[NSBundle mainBundle] URLForResource:bundleName withExtension:@&quot;jsbundle&quot;];</span><br><span class="line">#endif</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这段代码会随机加载不同的bundle，显示不同的界面</p>
+<p><img src="https://ww1.yunjiexi.club/2019/12/27/PNMhz.png" alt="image"></p>
+<p><img src="https://ww1.yunjiexi.club/2019/12/27/PNX1P.png" alt="image"></p>
+<p><img src="https://ww1.yunjiexi.club/2019/12/27/PNZyw.md.jpg" alt="image"></p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2019/12/26/ReactNative的调试技巧/" title="ReactNative的调试技巧">ReactNative的调试技巧</a></h2>
+                <p class="excerpt">
+                
+                ReactNative断点调试1.RCTWebSocketExecutor.m文件修改localhost为Mac的IP：
+1234567NSInteger port &amp;#x3D; [[[_bridge bundleURL] port] integerValue] ?: RCT_METRO_PORT;
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2019-12-26T10:13:39.759Z" class="post-list__meta--date date">2019-12-26</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/12/26/ReactNative的调试技巧/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2019 guchengfeng - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io" target="_blank" rel="noopener">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno " target="_blank" rel="noopener">new-vno</a> 主题，由<a href="https://monniya.com " target="_blank" rel="noopener">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
